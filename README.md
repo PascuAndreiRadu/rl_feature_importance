@@ -14,9 +14,7 @@ If you want to use it with Stable Baselines 3:
 pip install -e .[sb3]
 ```
 
-## Usage
-
-Here is a quick example of how to use the Permutation Feature Importance evaluator:
+## Usage Example
 
 ```python
 import numpy as np
