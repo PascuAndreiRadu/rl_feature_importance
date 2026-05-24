@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rl_feature_importance"
+version = "0.1.0"
+description = "A unified package for computing feature importance in Reinforcement Learning models (SB3 and PyTorch)."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.13.0",
+    "numpy>=1.21.0",
+    "gymnasium>=0.28.1"
+]
+
+[project.optional-dependencies]
+sb3 = ["stable-baselines3>=2.0.0"]
+dev = [
+    "pytest>=7.0",
+    "stable-baselines3>=2.0.0"
+]
